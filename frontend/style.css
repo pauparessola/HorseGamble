@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.col {
+    border: 1px solid #ddd; /* només per veure visualment les columnes */
+    padding: 16px;
+}
+
+.radios label {
+    margin-right: 14px;
+    white-space: nowrap;
+}
+
+#taulaStats { width: 50%; border-collapse: collapse; margin-top: 12px; }
+#taulaStats th, #taulaStats td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+#taulaStats thead { background: #f6f6f6; }

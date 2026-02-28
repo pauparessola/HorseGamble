@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:style="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>HorseGambling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>HorseGambling 🐎 🐎 🐎</h1>
+
+    <section class="cols">
+
+        <!-- Columna esquerra: joc -->
+        <div class="col left">
+            <p id="moneys"></p>
+
+            <div class="radios">
+                <label><input type="radio" name="opcio" value="0"> Jack</label>
+                <label><input type="radio" name="opcio" value="1"> Jovial Merryment</label>
+                <label><input type="radio" name="opcio" value="2"> Horse 17</label>
+                <label><input type="radio" name="opcio" value="3"> Horse 23</label>
+                <label><input type="radio" name="opcio" value="4"> Horse 99</label>
+            </div>
+            <p></p>
+
+            <input type="text" id="textBox" />
+            <button id="botonApostar" disabled>Apostar!</button>
+        </div>
+
+        <!-- Columna dreta: estat/resultats -->
+        <div class="col">
+            <p id="statusText"></p>
+            <p id="statusHistory"></p>
+            <div id="resultats"></div>
+            <img id="imgResultat" alt="Resultat cursa" style="display: none; max-width: 100%; height: auto;" />
+
+
+        </div>
+
+    </section>
+
+    <table id="taulaStats">
+        <thead>
+        <tr>
+            <th>Cavall</th>
+            <th>Victòries</th>
+            <th>Partides</th>
+            <th>Winrate</th>
+        </tr>
+        </thead>
+        <tbody id="statsBody"></tbody>
+    </table>
+
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
